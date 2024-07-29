@@ -7,6 +7,7 @@
 body{
     background-color: black;
     color: whitesmoke;
+    text-decoration: none;
 }
 .header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("./images/header-image.png");
@@ -121,3 +122,241 @@ nav button{
     margin: auto;
 }
 
+@media screen and (max-width: 480px) {
+    .header-content {
+        left: 50%;
+        font-size: 18px;
+    }
+
+    .header-content input {
+        padding: 7px 60px;
+        margin-bottom: 10px;
+    }
+
+    .header-content button {
+        padding: 7px 10px;
+    }
+
+    .features {
+        padding: 20px 5%;
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .text-col, .img-col {
+        flex-basis: 100%;
+    }
+
+    .img-col img {
+        width: 100%;
+    }
+}
+
+.fandq p{
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+#font{
+    height: 90px;
+    width: 80%;
+    background-color: red;
+    font-size: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    
+    background-color: rgba(45, 45, 45, 0.806);
+    
+}
+#font:hover{
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+}
+
+#font p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fandq3{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+   /* gap: 2px; */
+   
+    
+    
+}
+
+.plus{
+    font-size: 25px;
+}
+.fandq3 img{
+    height: 20px;
+    width: 20px;
+}
+/* sign-in page */
+.image-sign-in{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("./images/sign-in-template.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.image-sign-in img{
+    height: 45px;
+    width: 160px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.login-page-contanier{
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: #db0001; */
+    height: 500px;
+    width: 450px;
+    border-radius: 7px;
+    padding: 48px 68px;
+    position: relative;
+    bottom: 500px;
+    left: 400px;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+.login-page-contanier p{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+.login-page-contanier input{
+    width: 100%;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    text-align: center;
+    text-align: left;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    margin: 13px;
+}.input2{
+    width: 100%;
+    /* line-height: 1.5; */
+    /* padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem; */
+    text-align: center;
+    text-align: left;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem; 
+    margin: 3px;
+}
+.sign-in-button{
+    height: 37px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0001;
+    margin: 20px;
+    
+}
+.sign-in-button p{
+    font-size:  16px ;
+}
+.sign-in-button:hover{
+    cursor: pointer;
+}
+.or{
+    height: 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.or p{
+    font-size: 19px;
+    font-weight: 50;
+}
+.sign-in-code{
+    height: 37px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.685);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: white;
+}
+.sign-in-code p{
+    font-size:  17px ;
+   
+}
+.sign-in-code:hover{
+    cursor: pointer;
+}
+.sign-up p{
+    font-size: 16px;
+
+}
+.sign-up a{
+    text-decoration: none;
+    color: #0071eb;
+}
+
+
+.span1 {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  .span1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.span1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.information p {
+    color: #8c8c8c;
+    font-size: 12px;
+    margin: 20px;
+}
+.information p span a{
+    text-decoration: none;
+    color: #0071eb;
+}
